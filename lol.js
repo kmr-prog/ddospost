@@ -391,8 +391,7 @@ const headers = {
 axios.post(target, requestData)
     .then(response => {
       if (response.status === 200) {
-        console.log('Request berhasil:', response.data);
-        return response.data;
+        console.log('Request berhasil:');
       } else {
         console.log('Request gagal dengan status:', response.status);
         return {
